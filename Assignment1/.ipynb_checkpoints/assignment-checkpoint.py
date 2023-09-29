@@ -53,7 +53,6 @@ class SequentialModelBasedOptimization(object):
         configuration
         """
         ei = self.expected_improvement(self.model, self.theta_inc_performance, capital_theta)
-        
         # print(ei)
         # TODO: ei now contains for each element in capital_theta the expected improvement
         # return the element in capital_theta with the highest expected improvement
@@ -101,4 +100,3 @@ class SequentialModelBasedOptimization(object):
             self.theta_inc = params
             self.theta_inc_performance = performance
         # raise NotImplementedError()
-    
